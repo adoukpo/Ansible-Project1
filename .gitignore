@@ -1,0 +1,57 @@
+# Ignore all Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Ignore crash logs from Terraform
+crash.log
+
+# Ignore override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore Terraform variable files (typically contains secrets)
+*.tfvars
+*.tfvars.json
+
+# Ignore .terraform directory
+.terraform/
+
+# Ignore large files over 100 MB
+# NOTE: GitHub has a strict file limit of 100 MB
+*.log
+*.exe
+*.dll
+*.zip
+*.tar.gz
+*.tgz
+*.bz2
+*.7z
+*.iso
+*.bin
+
+# Ignore archives and large files
+*.jar
+*.war
+*.ear
+*.tar
+*.rar
+
+# Ignore other common large binary files
+*.img
+*.dmg
+*.iso
+*.apk
+*.ipa
+*.deb
+*.rpm
+
+# Ignore backup files and temporary files
+*.bak
+*.tmp
+*.swp

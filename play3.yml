@@ -1,0 +1,14 @@
+---
+- hosts: webservers
+  become: yes
+  ignore_errors: yes
+  tasks:
+    - name: Download package
+      get_url:
+          url: https://github.com/kserge2001/resume/archive/refs/heads/main.zip
+          dest: /tmp/main.zip
+
+    - name: Delete file
+      file:
+        path: /tmp/main.zip
+        state: absent
